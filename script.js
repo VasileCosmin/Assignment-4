@@ -60,10 +60,10 @@ function deleteLastNumber() {
 }
 
 function inputNumber(number) {
-  if(firstOperator === null) {
-    if(displayText === '0' || displayText === 0) {
+  if(firstOperator == null) {
+    if(displayText == '0' || displayText == 0) {
       displayText = number;
-    }else if(displayText === firstInput) {
+    }else if(displayText == firstInput) {
       displayText = number;
     }else {
       displayText += number;
@@ -122,13 +122,13 @@ function inputEqual() {
 }
 
 function operate(operator, num1, num2) {
-  if(operator === '+') {
+  if(operator == '+') {
     return num1 + num2;
-  }else if(operator === '-') {
+  }else if(operator == '-') {
     return num1 - num2;
-  }else if(operator === '*') {
+  }else if(operator == '*') {
     return num1 * num2;
-  }else if(operator === '/') {
+  }else if(operator == '/') {
     return num1 / num2;
   }
 }
